@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 230 420" role="img" aria-label="Line drawing of the top of a thigh bone with a hip replacement: metal stem, ball and socket cup">
+  <defs>
+    <linearGradient id="fadeV" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.12" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.80" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="fade" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="460">
+      <rect x="0" y="20" width="300" height="420" fill="url(#fadeV)"/>
+    </mask>
+  </defs>
+
+  <!-- Bone (grey): pelvis rim around the socket, and the femur below the neck cut -->
+  <g fill="none" stroke="#4A5356" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" mask="url(#fade)">
+    <!-- pelvis: acetabular rim and a hint of the hip bone -->
+    <path d="M 66 168 C 44 140, 40 92, 62 62 C 80 38, 112 30, 140 36 C 160 40, 170 52, 178 66"/>
+    <!-- femur: medial edge with lesser trochanter, down the shaft -->
+    <path d="M 147 166 C 141 184, 128 204, 137 222 C 145 236, 154 240, 155 262 L 158 440"/>
+    <!-- femur: lateral edge, greater trochanter -->
+    <path d="M 214 440 L 216 232 C 218 202, 233 162, 233 122 C 233 94, 218 72, 205 72 C 196 72, 192 90, 187 110"/>
+    <!-- neck cut (where the natural ball was removed) -->
+    <path d="M 187 110 L 147 166"/>
+    <!-- inner wall of the bone canal -->
+    <path d="M 170 262 L 172 440" stroke-width="1.4" stroke-dasharray="4 5"/>
+    <path d="M 203 262 L 202 440" stroke-width="1.4" stroke-dasharray="4 5"/>
+  </g>
+
+  <!-- Implant (accent): stem, neck, ball and socket cup -->
+  <g fill="#fff" stroke="#1F5F6B" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- stem inside the femur -->
+    <path d="M 157 131 L 180 121 C 186 120, 190 125, 190 132 L 196 352 C 197 368, 177 374, 176 357 L 165 214 C 163 186, 158 160, 149 142 Z"/>
+    <!-- neck -->
+    <path d="M 131 132 L 141 118 L 158 131 L 149 143 Z"/>
+    <!-- socket cup -->
+    <path d="M 79.5 140.5 A 46 46 0 0 1 144.5 75.5 L 137.5 82.5 A 36 36 0 0 0 86.5 133.5 Z"/>
+    <!-- ball -->
+    <circle cx="112" cy="108" r="31"/>
+    <path d="M 96 92 A 22 22 0 0 1 116 85" fill="none" stroke-width="1.6"/>
+  </g>
+</svg>
